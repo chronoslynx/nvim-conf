@@ -22,8 +22,14 @@ nnoremap <leader>w :CtrlPBuffer<cr>
 " Open new buffers w/ fuzzy finding
 nnoremap <leader>e :CtrlP<cr>
 
+" Buffer list
+nnoremap <leader>b :Denite buffer<CR>
+
+" Look for files recursively
+nnoremap <leader>f :Denite file_rec<CR>
+
 " Call 'grep' (really ag)
-nnoremap <leader>y :Unite grep:.<cr>
+nnoremap <leader>y :Denite grep:.<cr>
 
 " Jump to the next or previous in the location window (works with pylama)
 nnoremap <leader>lo :lopen<cr>
@@ -41,3 +47,10 @@ nmap <leader>m :silent !pandoc %:p -o %:r.html<cr>
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 imap jk <Esc>
+
+" Split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+

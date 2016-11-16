@@ -51,3 +51,6 @@ set ignorecase
 
 " Highlight search results
 set hlsearch
+
+set splitbelow
+set splitright

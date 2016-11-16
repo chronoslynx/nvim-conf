@@ -6,9 +6,12 @@ endif
 
 call plug#begin('~/.nvim/bundle')
 
+Plug 'Shougo/denite.nvim'
+
 Plug 'tpope/vim-sensible'
 Plug 'kien/ctrlp.vim'
 Plug 'gcmt/taboo.vim'
+Plug 'tpope/vim-surround'
 
 Plug 'airblade/vim-rooter'
 Plug 'rking/ag.vim'

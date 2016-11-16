@@ -27,4 +27,4 @@ set timeout ttimeoutlen=50
 set clipboard=unnamed
 
 " 'grep' should call ag instead of grep
-set grepprg=ag\ --nogroup\ --nocolor
+set grepprg=rg\ --color\ never
