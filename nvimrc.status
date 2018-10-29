@@ -37,6 +37,7 @@ function! Status(winnum)
   let stat .= '%='
 
   " git branch
+  let head = ''
   if active && exists('*fugitive#head')
     let head = fugitive#head()
     if empty(head) && exists('*fugitive#detect') && !exists('b:git_dir')
